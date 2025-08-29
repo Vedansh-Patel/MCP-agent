@@ -12,6 +12,7 @@ async def make_nws_request(url: str) -> dict[str, Any] | None:
     headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/geo+json"
+        
     }
     async with httpx.AsyncClient() as client:
         try:
